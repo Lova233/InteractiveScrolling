@@ -8,26 +8,49 @@
         
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome-animation.min.css">
+
+  	<script src="onepage.js"></script>
         
     </head>
 <body>
-    <main>
-    <header>
-        <h1>Some bullshit about enviroment</h1>
-    </header>
-    <div data-aos-delay="400" data-aos="zoom-in-right" class="story" ><h2>some bullshit</h2></div>
-    <div data-aos-delay="400" data-aos="zoom-in-left" class="story" style="align-self:flex-end"><h2>some bullshit</h2></div>
-    <div data-aos-delay="400" data-aos="zoom-in-right" class="story"><h2>some bullshit</h2></div>
-    <div data-aos-delay="400" data-aos="zoom-in-left" class="story" style="align-self:flex-end"><h2>some bullshit</h2></div>
+    <section id="first">
+    <h1 style="margin-top:10px"> One-third of food produced for human consumption is lost or wasted globally, the equivalent of 1.3 billion tonnes per year, according to the UN Food and Agriculture Organisation. <br>
+        <a style="text-decoration: none" class="nav" href="#second" ><i class="fas fa-arrow-circle-down"></i>
 
-    <div class="content"><h3>The classic product that will save the planet</h3></div>
+</a></h1>
+    </section>
     
-    </main>
+    
+    
+    <section id="second">
+    <div data-aos-easing="ease-in-sine"	data-aos="flip-left" class="story" ><h2>Fruits and vegetables, plus roots and tubers have the highest wastage rates of any food.</h2></div>
+    <div data-aos-delay="1600" data-aos="flip-left" class="story" style="align-self:flex-end"><h2>Every year, consumers in rich countries waste almost as much food (222 million tonnes) as the entire net food production of sub-Saharan Africa (230 million tonnes).</h2></div>
+    <div data-aos="flip-up" data-aos-delay="10000" ><h1  > Sad Story is it? Want to hear the good <a class="nav" href="#third" >news?</a></h1>
+    </div>
+    </section>
+    <section id="third">   
+    <div data-aos-easing="ease-in-sine"	data-aos="flip-left" class="story" ><h2>Fruits and vegetables, plus roots and tubers have the highest wastage rates of any food.</h2></div>
+    <div data-aos-delay="1600" data-aos="flip-left" class="story" style="align-self:flex-end"><h2>Every year, consumers in rich countries waste almost as much food (222 million tonnes) as the entire net food production of sub-Saharan Africa (230 million tonnes).</h2></div>
+    </section>
+
+    
+    <div data-aos-easing="ease-in-sine"	data-aos="flip-left"  class="story"><h2>some bullshit</h2></div>
+    <div data-aos-delay="2400" data-aos="flip-left" class="story" style="align-self:flex-end"><h2>some bullshit</h2></div>
+
+    <div class="content"><img src="assets/tomato.png"></div>
+    
     
     
     
       <script>
-    AOS.init();
+AOS.init({
+				easing: 'ease-out-back',
+				duration: 800
+			});
   </script>
 
 </body>
