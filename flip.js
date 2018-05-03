@@ -1,8 +1,11 @@
 $(document).ready(function() {
     
     var i=0;
+    var prClass = 'faa-wrench animated';
     
-    
+    var animationCl=[
+        'faa-ring animated','faa-shake animated','faa-bounce animated', 'faa-wrench animated'
+    ]
     
 $('.right').click(function(){
         i++;
@@ -13,7 +16,7 @@ $('.right').click(function(){
         if (i>1){
             
         console.log("continue")
-        i=0;
+        i=1;
 
         $('.button2').toggleClass('nonActive')
 
@@ -34,7 +37,8 @@ $('.right').click(function(){
 
     $('.card').toggleClass('flipped');
     $('.card').addClass('flip');
-    $('.button2').addClass('nonActive')   
+    $('.button2').addClass('nonActive');
+
         
         
     console.log(i,'sono ok')
@@ -50,6 +54,22 @@ $('.right').click(function(){
      $('.button2').toggleClass('nonActive')
         });
     
+    
+    
+    $("#lana").on('click', function(){
+        
+        console.log("lana ahyyyyy");
+        
+        
+        $(this).toggleClass(prClass);
+        var num = animationCl.indexOf(prClass)+1;
+        if (num==4) num=0;
+        $(this).toggleClass(animationCl[num]);
+        prClass=animationCl[num];
+        
+        
+        
+    });
         
     
     

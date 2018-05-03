@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -63,6 +63,10 @@ textPath{
     
 }
 
+
+.strong{
+    font-weight: bold;
+}
 h1{
     text-align: center;
     font-family: 'Titan One', cursive;
@@ -113,18 +117,31 @@ a{
     font-size: 1.4em;
 }
 
-a:hover {
-         text-shadow:2px 2px grey;
 
+
+.wrong:active{
+    color: red;
+    
+    
 }
+
+.right:active{
+    color: green;
+    
+    
+}
+
+
 
 h2{
     color: black;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Concert One', cursive;
     text-align: center;
     line-height: 30px;
     padding: 30px;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 25%;
 }
 
 
@@ -134,9 +151,8 @@ h3{
     text-align: center;
     line-height: 60px;
     font-size: 2em;
-    font-weight: bold;
-      text-shadow:2px 2px grey;
-    
+     width: 1000px;
+    margin: 0 auto;
 }
 
 h5{  
@@ -147,15 +163,44 @@ h5{
     
 }
 
-h4{
+h4{ 
+    width: 300px;
     color: black;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     line-height: 30px;
-    padding: 20px;
+    padding: 10px;
+    font-size: 1.8em;
+
+}
+
+
+h6{
+    width: 80%;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
     font-size: 1.8em;
     
+
+
+    
 }
+
+
+.bubble{
+    width: 600px;
+    position: absolute;
+    left: 500px;
+    top: 550px;
+    background-image: url(assets/bubble.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
 
 path {
   fill: transparent;
@@ -183,9 +228,15 @@ body{
     position: relative;
     margin: 50px auto;
 }
+
+
+
 .flip .card.flipped {
   -webkit-transform: rotatex(-180deg);
 }
+
+
+
 .flip .card {
   width: 100%;
   height: 100%;
@@ -195,6 +246,10 @@ body{
     top: 220px;
     left: 300px;
 }
+
+
+
+
 .flip .card .face {
   width: 100%;
   height: 100%;
@@ -205,18 +260,48 @@ body{
   text-align: center;
 
 }
+
+
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    background: white;
-    cursor: pointer;
+  cursor: pointer;
 
 }
+
+
+.answer > a{
+    background:rgba(255,255,255, 0.5);
+    border-radius: 25%;
+    color: black;
+    -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 62px -16px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 62px -16px rgba(0,0,0,1);
+box-shadow: 10px 10px 62px -16px rgba(0,0,0,1);
+        font-family: 'Concert One', cursive;
+
+    
+}
+
+
+.flip .card .front > h2{
+    background:rgba(255,255,255, 0.5);
+    border-radius: 25%;
+-webkit-box-shadow: 10px 10px 62px -16px rgba(255,255,255,1);
+-moz-box-shadow: 10px 10px 62px -16px rgba(255,255,255,1);
+box-shadow: 10px 10px 62px -16px rgba(255,255,255,1)
+}
+
+
+
+
 .flip .card .back {
   -webkit-transform: rotatex(-180deg);
-    background-color: white;
     cursor: pointer;
 }
+
+
 
 header{
     margin-bottom: 1000px;
@@ -278,7 +363,6 @@ section{
 
 }
 
-
 #second{
 }
 
@@ -295,10 +379,12 @@ a{
 
 .story{
     
-    width: 500px;
+    width:100%;
     height: 200px;
-    background-color: transparent;
-    margin: 100px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: move 10s steps(10) infinite alternate;
 }
 
 .question{
@@ -348,6 +434,7 @@ a{
     width:100%; 
     display:flex;
     justify-content: space-around;
+       margin-top: -20px;
 }
 
 .none{
@@ -364,14 +451,51 @@ a{
     float: left;
     }
 
+section > h3{
+    margin-top: 200px;
+}
+.content{
+width: 300px;
+position: relative;
+}
+
+.content2{
+width: 300px;
+position: absolute;
+top: 200px;
+}
+
+.content1{
+width: 300px;
+position: absolute;
+top: 480px;
+    left: 200px;
+}
+
+.click{
+position: absolute;
+top: 200px;
+left: 270px;
+
+    
+}
+
+
+.size{
+        width: 450px;
+
+}
+/*
 .content{
 width: 300px;
 position: fixed;
 top: 40%;
 left: 50%;
-margin-top: -150px; /* Negative half of height. */
-margin-left: -150px; /* Negative half of width. */ 
+margin-top: -150px; 
+margin-left: -150px; 
 z-index: 98;
+display: none;
+
 }
 
 .content1{
@@ -379,7 +503,24 @@ width:200px;
 position: fixed;
 top: 40%;
 left: 50%;
-margin-top: -200px; /* Negative half of height. */
-margin-left: -220px; /* Negative half of width. */ 
+margin-top: -200px; 
+margin-left: -220px; 
 z-index: 97;
+    display: none;
+}
+ */
+
+
+
+
+
+@keyframe fadeout {
+    
+    0% {opacity: 1}
+    100%{opacity: 0}
+}
+
+@keyframes move {
+ from { top: 0; left: 0; }
+  to   { top: 100px; left: 100px; }
 }
