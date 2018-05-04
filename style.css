@@ -141,7 +141,7 @@ h2{
     padding: 30px;
     font-size: 1.6em;
     background-color: rgba(255,255,255, 0.5);
-    border-radius: 25%;
+    border-radius: 25px;
 }
 
 
@@ -272,7 +272,7 @@ body{
 
 .answer > a{
     background:rgba(255,255,255, 0.5);
-    border-radius: 25%;
+    border-radius: 25px;
     color: black;
     -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -287,7 +287,7 @@ box-shadow: 10px 10px 62px -16px rgba(0,0,0,1);
 
 .flip .card .front > h2{
     background:rgba(255,255,255, 0.5);
-    border-radius: 25%;
+    border-radius: 25px;
 -webkit-box-shadow: 10px 10px 62px -16px rgba(255,255,255,1);
 -moz-box-shadow: 10px 10px 62px -16px rgba(255,255,255,1);
 box-shadow: 10px 10px 62px -16px rgba(255,255,255,1)
@@ -392,7 +392,7 @@ a{
     height: 200px;
     background-color: white;
     z-index: 99;
-    border-radius:15%;
+    border-radius:25px;
     display: flex;
     align-items: center;
     justify-content: center;
