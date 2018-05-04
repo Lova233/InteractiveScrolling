@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AN UGLY STORY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!--AOS scrolling system -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- Font / Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Titan+One" rel="stylesheet">
+    <!-- Audio -->
+    <audio id="audio1" src="sounds/Flip.mp3"></audio>
+    <audio id="audio2" src="sounds/Fail.mp3"></audio>
+    <audio id="audio3" src="sounds/Fast.mp3"></audio>
+    <audio id="audio4" src="sounds/Slow.mp3"></audio>
+</head>
+
+<body>
+    
+    
+<!-- SECTION ONE -->
+    <section id="first">
+        
+        <h1><span>A</span><span>N</span>&nbsp;<span>U</span><span>G</span><span>L</span><span> </span><span>Y</span>&nbsp;<span>S</span><span>T</span><span>O</span><span> </span><span>R</span><span>Y</span><span>!</span></h1>
+        <button data-id="audio3" class="button1">
+            <h5><a class="nav" href="#second" >START</a></h5></button>
+
+        <div style="margin-top:50px" class="wrapper">
+            <h3 style="font-size:3em;" class="strong">Hello! My name’s Adam the Apple</h3>
+            <div class="content"><img src="assets/ugli_fruit_apple.svg"></div>
+            <h3 style="font-weight:300;">Did you know that because I am not the prettiest apple, I won’t be able to go to a supermarket and be sold....</h3>
+        </div>
+    </section>
+<!-- SECTION TWO -->
+    <section id="second">
+        <div>
+
+            <a>
+                <div id="lana" class="content2 faa-wrench animated"><img src="assets/ugli_fruit_bruisedbanana.svg"></div>
+            </a>
+            <div data-aos="fade-right" class="click faa-flash animated">
+                <a><img class="size" src="assets/click.png"></a>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="1200" class="flip">
+
+                <div class="card" id="one">
+                    <div class="face front">
+
+                        <h2>In the UK 10 million tonnes of food is wasted each year! That is the same as how many buses?</h2>
+                        <div class="answer">
+                            <a class="wrong" data-id="audio2">200k</a >
+                <a class="wrong" data-id="audio2" >300k</a >
+                <a class="right" data-id="audio1" >400k</a >
+                </div>
+                </div>  
+
+            <div class="face back"> 
+                <h4 class="strong" style="line-spacing:10px;">CORRECT!</h4>
+                <h2>10 million tonnes is the equivalent to over 400 double decker buses.</h2>
+            </div>  
+        </div> 
+    </div> 
+
+    <div  data-aos="fade-right" data-aos-delay="1000"  class="flip" id="two"> 
+        <div class="card"> 
+            <div class="face front"> 
+                <h2 style="font-size:1.3em;">Enough food is wasted each year to provide the whole population of Manchester with their complete 5 a day, but how tonnes is that?</h2>
+                <div class="answer">
+                <a  class="wrong" data-id="audio2">35k</a>
+                            <a class="right" data-id="audio1">37k</a>
+                            <a class="wrong" data-id="audio2">39k</a>
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <h4 class="strong" style="line-spacing:10px;">WOW!</h4>
+                        <h2>A whopping 37,000 tonnes of fruit and veg is wasted each year.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <button id="b1" data-id="audio3" class="button2 check nonActive">
+                <h5><a class="nav" href="#third" >SO...?</a></h5></button>
+
+        </div>
+
+    </section>
+<!-- SECTION THREE -->
+    <section id="third">
+        <div class="content1 faa-wrench animated jack">
+            <a><img src="assets/ugli_fruit.svg"></a>
+        </div>
+        <div class="story">
+            <h3>What is &nbsp;<a class="strong" style="padding:0;">ugly</a>&nbsp;produce? Carrots may encounter rocks as they grow which causes them to grow in odd shapes but they`re still as <a class="strong" style="padding:0;">tasty</a>. Up to 1/3 of produce globally is <a class="strong" style="padding:0;">wasted</a>.</h3>
+
+        </div>
+        <div data-aos="fade-left" data-aos-delay="800" class="flip">
+
+            <div class="card" id="one">
+                <div class="face front">
+
+                    <h2>We throw away 1.4 million bananas in the bin every day for having minor bruises or black marks on their skin. This costs the UK how much every year?! </h2>
+                    <div class="answer">
+                        <a class="wrong" data-id="audio2">60</a >
+                <a class="wrong"  data-id="audio2" >30</a >
+                <a id="double"    data-id="audio1"class="right" >80</a >
+            </div>  
+            </div>    
+
+            <div class="face back"> 
+          <h4 class="strong" style="line-spacing:10px;">THAT'S RIGHT!</h4>
+                <h2>It cost’s the UK 80 million per year!</h2>
+            </div>  
+        </div> 
+        </div>
+
+    <button id="b2" data-id="audio3"  class="button2 check nonActive"><h5><a data-id="audio2"  class="nav" href="#fourth" >CONTINUE</a></h5>
+                        </button>
+
+    </section>
+<!-- SECTION FOUR -->
+    <section id="fourth">
+        <div class="content1 jack  faa-tada animated">
+            <a><img src="assets/ugli_fruit_lemon.svg"></a>
+        </div>
+        <div class="story" style="height:285px;">
+            <h3 style="line-height:50px;">Produce can be classified as 'ugly' for being too<a class="strong" style="padding:0;"> small, bruised </a>or simply not being <a class="strong" style="padding:0;">aesthetically pleasing.</a> Buying ugly produce costs up to 50% less than normal. Leading supermarkets have started selling ugly produce to help reduce food waste around the world.</h3>
+
+        </div>
+        <div class="bubble">
+            <h6 style="line-height:35px; margin-left:100px;">I want to help 'ugly fruit'. Hopefully if we spread the word enough, I and my friends can fullfill our dreams of being eaten</h6>
+        </div>
+
+        <button data-id="audio4" class="button3 reset">
+            <h5><a class="nav" href="#first" >BACK TO TOP</a></h5></button>
+
+    </section>
+
+    <script src="script/flip.js"></script>
+    <script src="script/onepage.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1200
+        });
+    </script>
+    <script>
+        $(function() {
+
+            $('button, .wrong, .right').on('click', function() {
+                var audioId = $(this).data('id');
+                $('#' + audioId).get(0).play(); //further expl 
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>
